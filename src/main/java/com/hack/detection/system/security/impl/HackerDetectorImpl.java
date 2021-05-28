@@ -7,6 +7,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.hack.detection.system.security.HackerDetector;
@@ -15,6 +16,8 @@ import com.hack.detection.system.security.HackerDetector;
 public class HackerDetectorImpl implements HackerDetector{
 
 	Logger log;
+	@Value("${url}")
+	private String url;
 	
 	@Override
 	public String parseLine(String line) {
@@ -24,7 +27,7 @@ public class HackerDetectorImpl implements HackerDetector{
 
 	        try {
 	        	
-	            fh = new FileHandler("C:\\Users\\diego.alvaradocastil\\hotelBedsLog\\hotelbedshackerDetector.log", true);
+	            fh = new FileHandler(url, true);
 	            log.addHandler(fh);
 
 	            SimpleFormatter formatter = new SimpleFormatter();
