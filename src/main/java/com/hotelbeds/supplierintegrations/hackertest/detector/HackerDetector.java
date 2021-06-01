@@ -1,4 +1,4 @@
-package com.hack.detection.system.security;
+package com.hotelbeds.supplierintegrations.hackertest.detector;
 
 public interface HackerDetector {
 	

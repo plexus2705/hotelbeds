@@ -1,4 +1,4 @@
-package com.hack.detection.system.entity;
+package com.hotelbeds.supplierintegrations.hackertest.entity;
 
 import java.util.Date;
 

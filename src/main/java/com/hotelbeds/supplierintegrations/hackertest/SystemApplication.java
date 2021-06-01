@@ -1,4 +1,4 @@
-package com.hack.detection.system;
+package com.hotelbeds.supplierintegrations.hackertest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
